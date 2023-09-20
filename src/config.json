@@ -1,0 +1,22 @@
+{
+  "ENV": "LOCAL",
+  "API_URL": {
+    "LOCAL": "http://localhost:5268/api",
+    "TESTING": "http://192.168.1.2:5058/api",
+    "PRODUCTION": "http://crwn-clothing.com"
+  },
+  "CONTENT_URL": {
+    "LOCAL": "http://localhost:5268",
+    "TESTING": "http://192.168.1.2:5058",
+    "PRODUCTION": "http://crwn-clothing.com",
+    "EXTERNAL": ""
+  },
+  "WS_URL": {
+    "LOCAL": "http://localhost:5268/ws",
+    "TESTING": "http://192.168.1.2:5058/ws"
+  },
+  "PAGE_SIZE": {
+    "PRODUCTS": 20,
+    "CATEGORIES" : 4
+   }
+}

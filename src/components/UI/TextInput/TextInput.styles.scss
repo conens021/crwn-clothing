@@ -1,0 +1,62 @@
+@import '../../../styles/colors.scss';
+
+.text-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &.text-input-field {
+        width: 420px;
+        height: 35px;
+        border: 1px solid transparent;
+        border-bottom: 1px solid gray;
+        z-index: 3;
+        background-color: transparent;
+
+        &__invalid {
+            border-bottom-color: $error-color;
+        }
+
+        &__success {
+            border-bottom-color: $success-color;
+        }
+
+        &:focus {
+            outline: none !important;
+        }
+
+        &:focus+.label {
+            top: -15px;
+            color: rgb(53, 53, 53);
+            font-size: 13px;
+        }
+    }
+
+    &.label {
+        position: absolute;
+        top: 10px;
+        color: gray;
+        z-index: 2;
+        transition: all ease-in-out .12s;
+    }
+
+    &.label-fixed {
+        position: absolute;
+        z-index: 2;
+        top: -15px;
+        color: rgb(53, 53, 53);
+        font-size: 13px;
+    }
+
+    &__helper-text {
+        position: relative;
+        top: 10px;
+        color: $error-color;
+    }
+
+    &__success-text {
+        position: relative;
+        top: 7px;
+        color: $success-color;
+    }
+}

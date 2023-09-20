@@ -1,0 +1,17 @@
+@import '../../../styles/colors.scss';
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+        width: 100%;
+        border-bottom: 1px solid $dark-text;
+    }
+
+    td,
+    th {
+        padding: 1.5rem 1rem;
+        text-align: left;
+    }
+}

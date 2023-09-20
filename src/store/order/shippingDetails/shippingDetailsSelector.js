@@ -1,0 +1,1 @@
+export const selectShippingDetails = state => state.shippingDetails

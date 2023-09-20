@@ -1,0 +1,9 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/animations.scss';
+
+.form-error {
+    text-align: center;
+    color: $error-color;
+    animation-name: shake;
+    animation-duration: .5s;
+}
